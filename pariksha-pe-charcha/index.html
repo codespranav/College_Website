@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   
+    <title>Srijan Private ITI | Pariksha Pe Charcha 2022</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-1.10.2.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	
+	<script>
+   function validate() {
+	$("#file_error").html("");
+	$(".demoInputBox").css("border-color","#F0F0F0");
+	var file_size = $('#image1')[0].files[0].size;
+	if(file_size>2097152) {
+		$("#file_error").html("File size is greater than 2MB");
+		$(".demoInputBox").css("border-color","#FF0000");
+		return false;
+	} 
+	return true;
+}
+</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#ddlPassport").change(function () {
+            if ($(this).val() == "Y") {
+                $("#dvPassport").show();
+            } else {
+                $("#dvPassport").hide();
+            }
+        });
+    });
+</script>
+	
+</head>
+
+<body>
+<div style="background-color: #002147;font-size: 14px;padding: 0 15px;color: #fff;padding: 9px;">
+<div class="mw-fixed">
+<table>
+<tr>
+<td style=" text-align: right; border-right: 1px solid #ffffff; padding-right: 10px;font-weight:bold;">भारत सरकार <br/> Government of India</td>
+<td style="padding-left: 10px;font-weight:bold;">कौशल विकास और उद्यमिता मंत्रालय <br/> Ministry of Skill Development and Entrepreneurship</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+<section class="header row-c" style="background: #fff;">
+      <div class="mw-fixed">
+
+      <div class="h-clmn">
+<img src="images/lo.jpg" class="img-fluid" alt="DGT Header" />
+</div>
+
+		<div class="h-clmn dgt-h">
+			<img class="dgt-img" src="pariksha-pe-charcha\img\iti.png" />
+			<img class="dgt-img" src="images/skill_india.png" />
+			<img class="dgt-img" src="images/iti.png" />
+			<img class="dgt-img" src="images/AAM.png" />
+		</div>
+
+  </div>
+  
+	</section>
+	<a href="https://pmindiawebcast.nic.in/" target="_blank"><img src="images/Web-Banner-Hindi-final.jpg" class="img-fluid" alt="..."></a>
+<div class="container-xl px-4">
+
+
+    <!-- Account page navigation-->
+   <form method="post" enctype="multipart/form-data" >
+    <hr class="mt-0 mb-4">
+	
+	<h2 style="text-align: center;padding: .7%;">PPC-2022 : ITI/NSTI/IToT Attendance and Photo Upload Form</h2>
+    <div class="row">
+	
+	<br>
+        <div class="col-xl-4">
+            <!-- Profile picture card-->
+            <div class="card mb-4 mb-xl-0">
+               <!-- <div class="card-header">Enter NCVT MIS Code*</div>-->
+                <div class="card-body text-center">
+				<div class="col-md-12">
+                               
+
+<input class="form-control" id="ITI_Code" name="ITI_Code" type="text" placeholder="Enter ITI NCVTMIS Code"  value=""><br>
+<p>Note: Entry will be available on 1st April 2022</p>
+<input type="submit" name="a_submit" class='btn btn-primary' id="save" value="Proceed">
+    
+
+
+                            </div>
+                    <!-- Profile picture image-->
+					
+                    <!-- Profile picture upload button-->
+                    
+					
+	
+	
+                </div>
+            </div>
+        </div>
+		
+		
+		
+		
+		
+    </div>
+	
+ </form>
+</div>
+<div class="footer" id="footer">
+        <p>© 2022 Directorate General of Training All Rights Reserved.</p>
+       
+        
+    </div>
+
+
+</body>
+</html>
